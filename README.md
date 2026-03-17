@@ -34,6 +34,15 @@ Built as part of my transition into data analysis roles, leveraging my quantitat
 
 ## Key Analyses (Completed So Far)
 
+### Quick Summary of Analyses
+
+| # | Analysis                            | Key Metric                          | Top Insight                              |
+|---|-------------------------------------|-------------------------------------|------------------------------------------|
+| 1 | Total Revenue                       | $1,265,793.04                       | Overall business scale                   |
+| 2 | Revenue Trend (Normalized)          | 1997: +47% daily avg                | Strong growth, partial-year handling     |
+| 3 | Category Revenue + Avg Unit Price   | Beverages $268k ($28.10/unit)       | Meat/Poultry highest avg price ($38.82)  |
+| 4 | Top 10 Products                     | Côte de Blaye $141k (24 orders)     | Premium items dominate despite low volume|
+
 ### 1. Total Revenue
 - File: [queries/Total_Revenue.sql](queries/Total_Revenue.sql)  
 - Question: What is the overall revenue after discounts?  
@@ -56,7 +65,7 @@ Built as part of my transition into data analysis roles, leveraging my quantitat
   - Normalization using active days avoids misleading conclusions from partial-year totals.
 
 ### 3. Revenue & Units Sold by Product Category (with Avg Revenue per Unit)
-**File**: [queries/revenue_by_category.sql] queries/revenue_by_category.sql
+**File**: [queries/revenue_by_category.sql] (queries/revenue_by_category.sql)
 
 **Key results** (sorted by total revenue):
 
@@ -68,6 +77,27 @@ Built as part of my transition into data analysis roles, leveraging my quantitat
 - Beverages dominate total revenue and volume, but **Meat/Poultry** achieves the highest revenue per unit — likely premium/high-margin items.
 - Seafood has the lowest avg revenue per unit despite solid volume — potential area for price optimization or bundling strategies.
 
+### 4. Top 10 Products by Revenue
+**File**: [queries/top_10_products.sql](queries/top_10_products.sql)
+
+**Business question**: Which individual products generate the most revenue?  
+Helps identify flagship/high-value items.
+
+**Top 10 results** (sorted by revenue):
+
+- **Côte de Blaye** (Beverages) — $141,396.74 (623 units, 24 orders)
+- **Thüringer Rostbratwurst** (Meat/Poultry) — $80,368.67 (746 units, 32 orders)
+- **Raclette Courdavault** (Dairy Products) — $71,155.70 (1,496 units, 54 orders)
+- **Tarte au sucre** (Confections) — $47,234.97 (1,083 units, 48 orders)
+- **Camembert Pierrot** (Dairy Products) — $46,825.48 (1,577 units, 51 orders)
+- ... (and so on)
+
+**Insights**:
+- **Côte de Blaye** dominates despite low volume — extremely high unit price and value per order.
+- Dairy and Meat/Poultry products appear frequently — strong category performers.
+- Products like Raclette have broad reach (many orders) vs. high-value niche items like Côte de Blaye (fewer but larger orders).
+- Opportunity: Focus promotions/stock on these top 10; investigate why lower-ranked items underperform.
+
 ## Entity-Relationship Diagram
 ![Northwind ER Diagram](images/northwind_er_diagram.png)
 
@@ -77,10 +107,10 @@ Built as part of my transition into data analysis roles, leveraging my quantitat
 Save as `images/northwind_er_diagram.png`)
 
 ## Next Steps / In Progress
-- Revenue & units by product category
-- Top products & customers
 - Discount impact analysis
 - Employee performance
+- Top customers by spend
+- Python EDA project (Superstore dataset)
 
 ## About Me
 Math & Physics graduate (Trent University, Peterborough, ON)  
@@ -89,4 +119,4 @@ Open to feedback, collaboration, or entry-level opportunities!
 
 Questions or suggestions? Feel free to open an issue or connect on LinkedIn / X (@Tejas55065247).
 
-Last updated: March 2025
+Last updated: March 2026
