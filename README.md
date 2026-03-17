@@ -15,6 +15,8 @@ Built as part of my transition into data analysis roles, leveraging my quantitat
 
 ## Project Overview
 
+**Skills demonstrated**: PostgreSQL, SQL (joins, CTEs, window functions, aggregations), business insight generation, data storytelling.
+
 **Database**: PostgreSQL + Northwind Traders sample  
 - ~830 orders, 2155 line items  
 - Tables: orders, order_details, customers, products, categories, employees, etc.  
@@ -52,6 +54,19 @@ Built as part of my transition into data analysis roles, leveraging my quantitat
   - Strong revenue growth from partial 1996 to full 1997 (~3× increase).
   - Daily performance accelerated significantly into 1998, even with only ~4 months of data — indicates improving efficiency/momentum.
   - Normalization using active days avoids misleading conclusions from partial-year totals.
+
+### 3. Revenue & Units Sold by Product Category (with Avg Revenue per Unit)
+**File**: [queries/revenue_by_category.sql] queries/revenue_by_category.sql
+
+**Key results** (sorted by total revenue):
+
+- **Beverages** — $267,868.18 (9,532 units) → **$28.10** per unit
+- **Dairy Products** — $234,507.28 (9,149 units) → **$25.63** per unit
+- **Meat/Poultry** — $163,022.36 (4,199 units) → **$38.82** per unit (highest avg price)
+
+**Insights**:
+- Beverages dominate total revenue and volume, but **Meat/Poultry** achieves the highest revenue per unit — likely premium/high-margin items.
+- Seafood has the lowest avg revenue per unit despite solid volume — potential area for price optimization or bundling strategies.
 
 ## Entity-Relationship Diagram
 ![Northwind ER Diagram](images/northwind_er_diagram.png)
