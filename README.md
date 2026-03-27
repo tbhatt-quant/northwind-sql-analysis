@@ -65,7 +65,7 @@ Built as part of my transition into data analysis roles, leveraging my quantitat
   - Normalization using active days avoids misleading conclusions from partial-year totals.
 
 ### 3. Revenue & Units Sold by Product Category (with Avg Revenue per Unit)
-**File**: [queries/revenue_by_category.sql] (queries/revenue_by_category.sql)
+**File**: [queries/revenue_by_category.sql](queries/revenue_by_category.sql)
 
 **Key results** (sorted by total revenue):
 
