@@ -98,6 +98,26 @@ Helps identify flagship/high-value items.
 - Products like Raclette have broad reach (many orders) vs. high-value niche items like Côte de Blaye (fewer but larger orders).
 - Opportunity: Focus promotions/stock on these top 10; investigate why lower-ranked items underperform.
 
+### 5. Top 10 Customers by Total Spend
+**File**: [queries/top_10_customers.sql](queries/top_10_customers.sql)
+
+**Business question**: Who are our highest-value customers?  
+Helps identify customers for loyalty programs or targeted marketing.
+
+**Top 10 results**:
+
+- **QUICK-Stop** (Germany) — $110,277.31 (28 orders, avg $3,938/order, **8.71%** of total)
+- **Ernst Handel** (Austria) — $104,874.98 (30 orders, avg $3,496/order, **8.29%** of total)
+- **Save-a-lot Markets** (USA) — $104,361.95 (31 orders, avg $3,367/order, **8.25%** of total)
+- **Rattlesnake Canyon Grocery** (USA) — $51,097.80 (18 orders)
+- **Hungry Owl All-Night Grocers** (Ireland) — $49,979.91 (19 orders)
+
+**Insights**:
+- The top 3 customers alone account for **~25.25%** of total revenue — showing high customer concentration.
+- European customers (especially from Germany and Austria) perform strongly in the top ranks, but the USA is also well represented (Save-a-lot Markets is #3).
+- Very high average order values from the top customers (all above $3,300) suggest these are likely large B2B clients or wholesalers.
+- **Recommendation**: Prioritize relationship management and loyalty programs for the top 5–10 customers to reduce churn risk and drive further revenue growth.
+
 ## Entity-Relationship Diagram
 ![Northwind ER Diagram](images/northwind_er_diagram.png)
 
