@@ -42,6 +42,7 @@ Built as part of my transition into data analysis roles, leveraging my quantitat
 | 2 | Revenue Trend (Normalized)          | 1997: +47% daily avg                | Strong growth, partial-year handling     |
 | 3 | Category Revenue + Avg Unit Price   | Beverages $268k ($28.10/unit)       | Meat/Poultry highest avg price ($38.82)  |
 | 4 | Top 10 Products                     | Côte de Blaye $141k (24 orders)     | Premium items dominate despite low volume|
+| 5 | Top 10 Customers                    | QUICK-Stop $110k (8.71%)            | Top 3 customers = ~25% of total revenue  |
 
 ### 1. Total Revenue
 - File: [queries/Total_Revenue.sql](queries/Total_Revenue.sql)  
@@ -129,8 +130,7 @@ Save as `images/northwind_er_diagram.png`)
 ## Next Steps / In Progress
 - Discount impact analysis
 - Employee performance
-- Top customers by spend
-- Python EDA project (Superstore dataset)
+- Python EDA project (Superstore Sales dataset)
 
 ## About Me
 Math & Physics graduate (Trent University, Peterborough, ON)  
